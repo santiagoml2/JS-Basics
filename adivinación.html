@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número"));
+
+    if (numeroPensado == numeroLanzado){
+      imprimir("Acertó!")
+    } else{
+      imprimir("Error. El número correcto era" + numeroPensado);
+    }
+
+</script>
