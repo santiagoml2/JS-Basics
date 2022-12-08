@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1> Programa para calcular las tablas de multiplicar</h1>
+
+<script>
+
+  function saltarLinea() {
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var numeroIntegrantes = parseInt(prompt("Indique número de integrantes"));
+  var contador = 1;
+  var totalEdades = 0;
+
+  while (contador <= numeroIntegrantes) {
+    edad = parseInt(prompt("Ingrese la edad del integrante"));
+    totalEdades = totalEdades + edad;
+    contador++;
+  }
+
+  promedioEdades = totalEdades/numeroIntegrantes
+
+  imprimir("El promedio de edades es: " + promedioEdades);
+
+  imprimir("FIN");
+
+</script>
