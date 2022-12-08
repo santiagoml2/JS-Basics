@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA AÑO MUNDIAL FIFA </h1>
+
+<script>
+
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+  }
+
+  var worldCup = 1930
+  var limit = parseInt(prompt("Ingrese un número limite"));
+
+  while (worldCup <= limit){
+    imprimir("Hubo copa mundial en"  + worldCup);
+    worldCup = worldCup + 4
+  }
+
+  imprimir("Fin")
+
+</script>
